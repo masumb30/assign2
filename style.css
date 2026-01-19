@@ -19,7 +19,7 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 .font-16{
     font-size: 16px;
@@ -89,6 +89,11 @@ body{
     padding: 10px 15px;
     border-radius: 20px;
     color:white;
+    transition: padding 0.3s;
+}
+
+.subscribe-button:hover{
+    padding: 10px 25px;
 }
 
 .menuicon{
@@ -101,7 +106,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 760px;
+    /* min-height: 760px; */
 }
 
 .hero-container{
@@ -138,6 +143,11 @@ body{
 
 .hero-btns{
     margin-top: 15px;
+    display:flex;
+    gap: 20px
+}
+.hero-btns button{
+    cursor: pointer;
 }
 
 .colored-btn{
@@ -145,7 +155,11 @@ body{
     border-radius: 20px;
     color:white;
     border:none;
+    transition: all ease 0.4s;
+}
 
+.colored-btn:hover, .subscribe-btn:hover{
+    transform: scale(1.1);
 }
 .subscribe-btn{
     color:#00FF88;
@@ -153,11 +167,13 @@ body{
     border-radius: 20px;
     background-color: transparent;
     border: 1px solid #00FF88;
+    
+    transition: all ease 0.4s;
 }
 
 /* about section */
 .about-container{
-    padding: 80px 0;
+    padding: 80px 15px;
 }
 
 .text-section> h2, p{
@@ -240,7 +256,7 @@ body{
 
 /* featured section */
 .featured-container{
-    padding: 20px 0 50px 0;
+    padding-bottom: 50px;
 }
 .featured-text{
     padding: 80px 0 40px 0;
@@ -255,6 +271,7 @@ body{
 .video-card{
     background-color:#250D44 ;
     border-radius: 20px;
+    overflow: hidden;
 }
 .video-info{
     padding: 20px;
@@ -347,4 +364,45 @@ footer{
     .logo{
         height: 20px;
     }
+
+    .hero-container h2{
+        font-size: 40px;
+    }
+
+    .text-section h2{
+        font-size: 32px;
+    }
+    .info-section{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+}
+.chooseus {
+    font-size: 32px;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "premium"
+    "mobile"
+    "global"
+    "exclusive" "rich";
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.video-grid{
+    flex-direction: column;
+}
+.featured-text{
+    font-size: 32px;
+}
+.host-text{
+    font-size: 32px;
+}
+.host-card{
+    flex-direction: column;
+}
+.footer-links{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
 }
