@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+
+}
+body{
+    font-size: 16px;
+}
+
+.gradient-background{
+    background-image: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-24{
+    font-size: 24px;
+}
+.font-32{
+    font-size: 32px;
+}
+.font-60{
+    font-size: 60px;
+}
+.font-48{
+    font-size: 48px;
+}
+
+.weight-regular{
+    font-weight: 400;
+}
+.weight-medium{
+    font-weight: 500;
+}
+.weight-semibold{
+    font-weight: 600;
+}
+.weight-bold{
+    font-weight: 700;
+}
+.weight-extrabold{
+    font-weight: 800;
+}
+.weight-black{
+    font-weight: 900;
+}
+
+.dark-background{
+    background-color: #1A0B2E;
+}
+.light-background{
+    background-color: #230E3D;
+}
+.lighter-background{
+    background-color: #250D44;
+}
+
+
+/* nav bar */
+
+.nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+.links ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+.links ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.subscribe-button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    color:white;
+}
+
+.menuicon{
+    display:none;
+}
+
+
+/* responsive css */
+@media only screen and (max-width: 576px){
+    .menuicon{
+        display:block;
+    }
+    .links, .btn{
+        display:none;
+    }
+    .logo{
+        height: 20px;
+    }
+}
