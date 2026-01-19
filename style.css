@@ -60,7 +60,7 @@ body{
     background-color: #1A0B2E;
 }
 .light-background{
-    background-color: #230E3D;
+    background-color: #1f0b38;
 }
 .lighter-background{
     background-color: #250D44;
@@ -186,6 +186,56 @@ body{
     text-transform: uppercase;
 }
 
+/* grid section */
+.chooseus{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "premium mobile mobile"
+    "premium global global"
+    "exclusive exclusive rich";
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 0;
+}
+
+.premium{
+    grid-area: premium;
+}
+.mobile{
+    grid-area: mobile;
+}
+.global{
+    grid-area: global;
+}
+.exclusive{
+    grid-area: exclusive;
+}
+.rich{
+    grid-area: rich;
+}
+.card{
+    background-color: #250D44;
+    border-radius: 20px;
+    text-align: start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+}
+.card h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.card p{
+    text-align: start;
+}
 /* responsive css */
 @media only screen and (max-width: 576px){
     .menuicon{
